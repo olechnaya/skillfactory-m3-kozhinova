@@ -3,11 +3,18 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.bg_grey {
+    background-color: #F6F2F2;
 }
 
 header {
-    height: 90px;
-    line-height: 90px;    
+  
+    line-height: 90px; 
+   
 }
 
 .container {
@@ -22,19 +29,22 @@ header {
     max-width: 1320px;
 }
 
-header .container {
+header {
     background-color: rgba(0 0 0 / 80%);
+    height: 90px;
+    width: 1200px;
+    margin: 0 auto;
 }
-
-nav ul {
+header ul {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav a {
+header a {
     color: #E0E0E0;
     font-weight: bold;
     text-transform: uppercase;
@@ -43,11 +53,11 @@ nav a {
     padding: 0 25px;
 }
 
-nav a:hover {
+header a:hover {
     background-color: #FF3F40;
 }
 
-nav a:active {
+header a:active {
     background-color: #c52323;
 }
 
@@ -99,4 +109,27 @@ h1 {
 .intro p {
     line-height: 1.75em;
     margin-bottom: 35px;
+}
+
+
+/* ------------------------- */
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    flex: 1 1 250px;
+    background-color: rgb(255, 174, 174);
+    margin: 10px;
+    padding: 20px;
+}
+
+.item img {
+    width: 95%;
+}
+
+@media screen and (max-width:700px) {
+    .item {
+        flex: 1 1 100%;
+    }
 }
