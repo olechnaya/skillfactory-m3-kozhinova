@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .light-bl {
+            background: rgb(158, 213, 252);
+        }
+        .mid-bl {
+            background: rgb(54, 171, 255);
+        }
+        .dark-bl {
+            background: rgb(6, 50, 82);
+        }
+        .header {
+            height: 40px;
+        }
+        .sidebar {
+            /* height:  calc(100vh - 40px); */
+            order: 2;
+        }
+        .footer {
+            height: 40px;
+        }
+        .content {
+            height:  calc(100vh - 80px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid"> 
+     
+        <div class="row">
+            <div class="col mid-bl header"></div>
+           </div>
+    
+     <div class="row">
+        <div class="col-3 dark-bl sidebar"></div>
+        <div class="col-9">
+            <div class="row">
+                <div class="col light-bl content"></div>                
+            </div>
+            <div class="row">
+                <div class="col mid-bl footer"></div>
+            </div>
+        </div>
+     </div>
+    </div>
+</body>
+
+</html>
