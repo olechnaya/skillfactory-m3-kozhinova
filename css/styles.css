@@ -43,18 +43,35 @@ h1 {
     border-color: #FF2D2D;
 }
 
+.btn-primary:hover {
+    background-color: #f76c6c;
+    border-color: #f76c6c;
+}
+
+.btn-primary:active {
+    background-color: #b52020;
+    border-color: #b52020;
+}
+
 .btn-outline {
     border-color: #FF2D2D;
     color: #FF2D2D;       
 }
 
 .d-flex {
-    display: flex!important;
+    display: flex!important;    
+}
+
+.flex-wrap {
     flex-wrap: wrap;
 }
 
 .justify-content-center {
     justify-content: center!important;
+}
+
+.justify-content-between {
+    justify-content: space-between;
 }
 
 .intro_content,
@@ -65,13 +82,17 @@ h1 {
     box-sizing: border-box;
 }
 
-.services h2,
-.features h2 {
+h2 {
     font-size: 42px;
     font-weight: 700;
     line-height: 55px;
     margin-bottom: 50px;
     text-transform: uppercase;
+}
+
+.services,
+.features {    
+    margin-top: 100px;
 }
 
 /*#region INTRO styles*/	
@@ -104,10 +125,6 @@ margin-top: 0;
 
 /*#region SERVICES styles*/	
 
-.services,
-.features {    
-    margin-top: 100px;
-}
 .services .container {
     position: relative;
     padding-bottom: 34px;
@@ -152,7 +169,7 @@ margin-top: 0;
     margin-top: 70px;
 }
 
-h3:before {
+.services_items h3:before {
     content: '';
     position: absolute;
     width: 40px;
@@ -262,6 +279,287 @@ h3:before {
 
   /*#endregion*/
 
+  /*#region TEAM styles*/	
+ .team {
+    margin-bottom: 137px;
+ }
+
+.team hgroup {
+    position: relative;
+    width: 50%;
+    margin-bottom: 64px;
+}
+
+.team hgroup:after {
+    content: '';
+    position: absolute;
+    width: 134px;
+    height: 2px;
+    left:0;
+    bottom: 0;
+    background-color: #FF2D2D;    
+}
+
+.team hgroup h2 {
+    margin-bottom: 28px;
+}
+
+.team hgroup p {    
+    line-height: 28px;
+    margin-bottom: 28px;
+}
+
+.team-member-selected {
+    margin-right: 73px;    
+}
+
+.team-member-selected img {
+    width: 320px;
+    height: 460px;
+}
+.team-member-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.team-member-section h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.team-member-section p {
+    line-height: 28px;
+}
+
+.socials {
+    margin: 20px 0;
+}
+
+.socials a {
+    color: #000;
+    font-size: 18px;
+    font-style: italic;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    font-weight: 600;
+}
+
+.socials a.fb:hover {
+    color: #38529a;
+}
+
+.socials a.dr:hover {
+    color: #d04375;
+}
+
+.socials a.bh:hover {
+    color: #0258f7;
+}
+
+.socials a.tw:hover {
+    color: #1c96e8;
+}
+
+.team-member {
+    position: relative;
+    margin-top:20px;
+}
+
+.team-member:not(:last-child) {
+    margin-right: 20px;
+}
+
+.team-member img {
+    width: 197px;
+    height: 214px;
+    object-fit: cover;
+}
+
+.team-member .desc {
+    position: absolute;
+    width: 100%;
+    bottom: 2px;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    padding: 20px 0;
+    background: #00000070;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
+    transition: opacity 0.3s linear; 
+}
+
+.team-member:hover .desc {
+    opacity: 1;
+}
+
+/*#endregion*/
+
+/*#region SUBSCRIPTION styles*/
+.subscription {
+    padding: 150px 0 140px;
+    background: #000;
+    color: #fff;
+  }
+
+  .subscription hgroup {
+    margin-bottom: 56px;
+    text-align: center;
+  }
+  .subscription hgroup h2 {
+    margin-bottom: 28px;
+}
+.subscription form {
+    width: 100%;
+    justify-content: center;   
+    gap: 20px;
+}
+
+.subscription input[type=email] {
+    width: 524px;
+    box-sizing: border-box;
+    padding: 30px 38px;
+    border-radius: 0.25rem;
+}
+
+.subscription input[type=email]:focus {
+    border-color: #6e6e6e;
+    box-shadow: #6e6e6e6b 0 0 0 4px;
+    outline: none;
+}
+/*#endregion*/
+
+/*#region GETINTOUCH styles*/
+.get_in_touch {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 92px;
+    /* padding-bottom: 110px; */
+    margin-bottom: 120px;
+ }
+
+.get_in_touch hgroup {
+    position: relative;
+    /* width: 50%; */
+    margin-bottom: 64px;
+    padding-bottom: 40px;
+}
+
+.get_in_touch hgroup p {
+    margin: 0;
+    line-height: 1.75;
+    max-width: 720px;
+}
+
+.get_in_touch hgroup:after {
+    content: '';
+    position: absolute;
+    width: 134px;
+    height: 2px;
+    bottom: 0;    
+    background-color: #FF2D2D;    
+}
+
+.feedback .form_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 731px;
+    margin-right: 107px;
+}
+
+.form_container form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.deco_left {
+    flex: 1 1 auto;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 130px 53px 125px 78px;
+    min-height: 481px;
+    max-width: 411px;
+    line-height: 1.5;
+}
+.contacts,
+.deco_right {
+    background: #000;
+}
+
+.deco_right {
+    min-height: 481px;
+    flex: 1 1 auto;
+}
+
+.form_container input {
+    color: #8e8e8e;
+    box-sizing: border-box;
+    padding-left: 54px;
+    padding-right: 54px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    margin-bottom: 45px;
+}
+
+#userName, #userEmail {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 340px;
+    height: 70px;
+    background-color: #f3f3f3;
+}
+#userMessage {
+    resize: none;
+     font-size: 16px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        width: 100%; 
+    max-width: 730px;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 35px 54px;
+    margin-bottom: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+}
+
+.form_container button {
+    width: 100%;
+    max-width: 731px;
+}
+.contacts {
+    display: flex;
+}
+.contacts h3 {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.contacts span {
+    /* display: inline-block; */
+}
+/*#endregion*/
+
 	/*#region PAGE styles*/	
     
     .app {
@@ -299,6 +597,11 @@ h3:before {
     .foo_link {
         display: inline-block;
     }
+
+    .foo_link:hover img{
+        opacity: 0.8;
+    }
+
     .foo_socials > .foo_link:not(:last-child) {
         margin-right: 18px;
     }
@@ -383,7 +686,6 @@ h3:before {
 
 
 
-
 .item {
     flex: 1 1 250px;
     background-color: rgb(255, 174, 174);
@@ -393,6 +695,83 @@ h3:before {
 
 .item img {
     width: 95%;
+}
+
+@media screen and (max-width: 1200px) {
+    .intro_video,
+    .intro_content {
+        width: 100%;
+        text-align: center;
+    }
+    .intro_content {
+        padding: 0 2vw 10vw;
+    }
+    
+    .feedback {
+		margin: 0 auto;
+		margin-bottom: 30px;
+		padding: 0 2vw;
+	}
+
+	.form_container {
+		margin-right: 0;
+	}
+
+	.get_in_touch {
+		flex-wrap: wrap;
+		padding-left: initial;
+		padding-right: initial;
+		padding-bottom: 0;
+        margin-bottom: 0;
+	}
+    
+	.deco_left {
+		flex: 0 1 auto;
+	}
+
+	.contacts {
+		width: 100%;
+		max-width: 100%;
+		grid-column: 1 / 6;
+		grid-row: 2 / 3;
+	}
+
+	.get_in_touch::after {
+		content: initial;
+	}
+}
+@media screen and (max-width:900px) {
+    .services_desc, .services_items {
+        width: 100%;
+    }
+    .services_desc {
+        padding: 0 2vw 10vw;
+    }
+
+    .services_items {
+        padding: 0 2vw;
+    }
+
+    .team hgroup {
+        width: 100%;
+        text-align: center;
+    }
+
+    .team hgroup:after {
+        left: 50%;
+        margin-left: -67px;
+    }
+    .team-view {
+        justify-content: center;
+    }
+
+    .team-member-section {
+        padding: 0 2vw;
+    }
+
+    .team-member-section h3 {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -443,3 +822,17 @@ h3:before {
 @media screen and (max-width:380px) {
    
 }
+
+@media screen and (max-width: 855px){
+    .team-view {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .team-member-selected {
+        margin-bottom: 18px;
+        margin-right: 0;
+    }
+    }
+
+   
